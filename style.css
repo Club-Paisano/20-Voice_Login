@@ -1,0 +1,53 @@
+:root {
+  --base1: #323232;
+  --base2: #dd2e2e;
+  --base3: #e7a24e;
+  --base4: #fdffff;
+  font-size: 16px;
+}
+
+body {
+
+  background-color: var(--base1);
+  color: var(--base4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+form {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form > * {
+  margin-bottom: 10px;
+}
+h1 {
+  font-size: 2rem;
+  color: var(--base3);
+  font-weight: bold;
+}
+h2 {
+  font-size: 1rem;
+  color: var(--base3);
+}
+
+input {
+  background-color: var(--base1);
+
+}
+input[data-login=password], label[for=password] {
+  display:none;
+}
+
+.green {
+  background-color: green;
+}
+.red {
+  background-color: red;
+}
